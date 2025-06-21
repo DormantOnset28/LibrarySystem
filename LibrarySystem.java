@@ -3,10 +3,12 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.swing.*;
 
+
+//main file for the whole project all logic write below comment on missing features
 public class LibrarySystem {
-    private List<Book> books;
-    private List<Patron> patrons;
-    private List<CheckoutRecord> checkouts;
+    private final List<Book> books;
+    private final List<Patron> patrons;
+    private final List<CheckoutRecord> checkouts;
 
     public LibrarySystem() {
         books = new ArrayList<>();

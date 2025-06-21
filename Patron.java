@@ -1,8 +1,10 @@
+//Class responsible for handling library user details everything final dont modify
+
 public class Patron {
-    private String name;
-    private String id;
-    private String email;
-    private String phone;
+    private final String name;
+    private final String id;
+    private final String email;
+    private final String phone;
 
     Patron(String name, String id, String email, String phone) {
         this.name = name;
