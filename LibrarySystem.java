@@ -1,9 +1,7 @@
-import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.List;
+import javax.swing.*;
 
 public class LibrarySystem {
     private List<Book> books;
@@ -335,7 +333,7 @@ public class LibrarySystem {
         
         for (int i = 0; i < checkouts.size(); i++) {
             CheckoutRecord record = checkouts.get(i);
-            data[i][0] = record.getPatron().getName();
+            data[i][0] = record.getPatron();
             data[i][1] = record.getBook().getTitle();
             data[i][2] = record.getCheckoutDate();
             data[i][3] = record.getDueDate();
